@@ -20,15 +20,15 @@ public class Prodotto {
 	int productPrice;
 	int productIva;
 	
-	public Prodotto(String productName, String productDescription, int productPrice, int productIva ) {
+public Prodotto(String productName, String productDescription, int productPrice, int productIva ) {
 		
-		Random random = new Random ();
+	Random random = new Random ();
 		
-		this.productCode = random.nextInt(99999);
-		this.productName = productName;
-		this.productDescription = productDescription;
-		this.productPrice = productPrice;
-		this.productIva = productIva;
+	this.productCode = random.nextInt(99999);
+	this.productName = productName;
+	this.productDescription = productDescription;
+	this.productPrice = productPrice;
+	this.productIva = productIva;
 		
 	}
 	
@@ -48,7 +48,7 @@ il prodotto esponga un metodo per avere il nome esteso, ottenuto concatenando co
 	}
 	
 	public String nameExtended () {
-		String fullName = productCode + "" + productName;
+		String fullName = productCode + " " + productName;
 		return fullName;
 	}
 
